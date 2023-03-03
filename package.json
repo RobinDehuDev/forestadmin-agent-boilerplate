@@ -1,0 +1,25 @@
+{
+  "author": "Robin",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --watch src -e js,ts,json --exec \"ts-node src/index.ts\"",
+    "build": "tsup src/index.ts --format cjs --clean",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.5",
+    "nodemon": "^2.0.21",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^3.14.2",
+    "tsup": "^6.6.3",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@forestadmin/agent": "^1.8.3",
+    "@forestadmin/datasource-sql": "^1.2.4",
+    "dotenv": "^16.0.3",
+    "forest-express-sequelize": "^9.2.8",
+    "pg": "^8.9.0",
+    "zod": "^3.20.6"
+  }
+}
